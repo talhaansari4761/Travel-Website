@@ -1,0 +1,639 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ################### html element styling ######################### */
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+/* ###################### utility classes ################################# */
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading {
+    font-size: 3.5rem;
+}
+
+.md-heading {
+    font-size: 2.2rem;
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #f4f4f4;
+}
+
+.text-black {
+    color: #333333;
+}
+
+.text-gray {
+    color: #555555;
+}
+
+.bg-dark {
+    background-color: #263238;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary {
+    background-color: white;
+    border-radius: 10em;
+}
+
+.btn-primary:hover {
+    background-color: #dddddd;
+}
+
+
+.btn-secondary {
+    background-color: white;
+    border-radius: 1.5em;
+    border: 2px solid #e63946;
+    color: #e63946;
+}
+
+.btn-secondary:hover {
+    background-color: #fcf3f2;
+}
+
+/* ################## header styling ####################### */
+
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    padding: 1rem;
+}
+
+.navbar .logo {
+    float: left;
+    margin-top: 0.5rem;
+}
+
+.navbar .nav-items {
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: #f4f4f4;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ################### header content styling ###################### */
+
+.header-content {
+    position: absolute;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p {
+    text-transform: uppercase;
+}
+
+/* ######################## showcase section styling ####################### */
+
+.showcase {
+    background: #dddddd;
+    padding: 10rem 0;
+}
+
+.row {
+    height: 350px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px 0px #aaaaaa;
+}
+
+.row1 {
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box, .row2 .text-box {
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box, .row1 .text-box {
+    float: right;
+    width: 50%;
+}
+
+.row .img-box {
+    height: 100%;
+}
+
+.row .text-box {
+    padding: 3rem;
+}
+
+.row .img-box img {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* #################### feature section styling ###################### */
+
+.features {
+    padding: 10rem 0;
+}
+
+.box-wrapper {
+    box-shadow: 0px 0px 20px 0px #eeeeee;
+}
+
+.box {
+    width: 33.3333333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.box-1, .box-3 {
+    background-color: #263238;
+}
+
+.box-2 {
+    background-image: linear-gradient( 109.6deg,  rgba(254,87,98,1) 11.2%, rgba(255,107,161,1) 99.1% );
+}
+
+.box-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ########################### footer styling ########################## */
+
+.footer {
+    background-color: #263238;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-media-links i {
+    margin: 2rem;
+}
+
+
+/* ###################### about section styling ##################3######## */
+
+.about {
+    padding: 5rem 0;
+}
+
+.about-heading::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid #e63946;
+    width: 100%;
+}
+
+/* ##################### about wrapper stylling ##################### */
+
+.about-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-wrapper .left {
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right {
+    float: right;
+    width: 50%;
+}
+
+.about-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before {
+    content: "\2713";
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+/* ###################### count styling ####################### */
+
+.counts {
+    margin-top: 3rem;
+}
+
+.count-item {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.count-item span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+
+.count-item p {
+    font-weight: 700;
+    color: #555555;
+    font-size: 1.8rem;
+}
+
+.counts::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ######################## banner styling ############################*/
+
+.cta-banner {
+    background-image: linear-gradient( 109.6deg,  rgba(254,87,98,1) 11.2%, rgba(255,107,161,1) 99.1% );
+    color: #f4f4f4;
+    padding: 1rem;
+    margin-top: 3rem;
+    box-shadow: 5px 5px 10px #dddddd;
+}
+
+.cta-banner-left {
+    width: 60%;
+    float: left;
+}
+
+.cta-banner-right {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+.cta-line {
+    font-weight: 700;
+    padding-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.cta-btn {
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    color: #f4f4f4;
+    border: 4px solid white;
+    padding: 0.3em 2.5em;
+}
+
+.cta-banner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ####################### contact form styling ###################### */
+
+.contact-form {
+    padding: 5rem 0;
+    background: #dddddd;
+}
+
+.form-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ######################## company address styling ######################### */
+
+.form-wrapper .company-address {
+    height: 730px;
+    background: #ffffff;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-wrapper .company-address i {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wrapper .company-address h2 {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group {
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img {
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* ####################### form styling ######################### */
+
+.form-wrapper .form {
+    height: 730px;
+    background: #ffffff;
+    width: 49%;
+    float: right;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form h1::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid #e63946;
+    width: 100%;
+}
+
+.form-wrapper .form label {
+    display: block;
+}
+
+.form-wrapper .form input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form label::after {
+    content: "* ";
+    color: #e63946;
+}
+
+.form-wrapper .form textarea {
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ###################### MEDIA QUERY ###################### */
+
+@media (max-width: 500px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    /* ################ nav-bar media query ######################3*/
+
+    .navbar .nav-items,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* #############333 header media query ################# */
+    .header-content h1 {
+        display: none;
+    }
+
+    /* ##################### showcase media query #################### */
+
+    .row {
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box {
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 0px 20px 0px #eeeeee;
+    }
+
+    .features .box-1,
+    .features .box-2 {
+        margin-bottom: 5rem;
+    }
+
+    .box-wrapper {
+        box-shadow: none;
+    }
+
+    /* ################## about page media query ##################### */
+
+    .cta-banner-left,
+    .cta-banner-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* #################### contact page media query ###################### */
+
+    .form-wrapper .company-address {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 786px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    /* ################ nav-bar media query ######################3*/
+
+    .navbar .nav-items,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ##################### showcase media query #################### */
+
+    .row {
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box {
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 0px 20px 0px #eeeeee;
+    }
+
+    .features .box-1,
+    .features .box-2 {
+        margin-bottom: 5rem;
+    }
+
+    .box-wrapper {
+        box-shadow: none;
+    }
+
+    /* ################## about page media query ##################### */
+
+    .cta-banner-left,
+    .cta-banner-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* #################### contact page media query ###################### */
+
+    .form-wrapper .company-address {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (orientation: landscape) and (max-height: 500px) {
+
+    .headre {
+        height: 90vmax;
+    }
+}
